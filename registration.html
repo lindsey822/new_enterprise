@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <meta name="author" content="Lindsey Liu">
+    <title>Registraion - New Enterprise System</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/registration.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,8 +22,104 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body role="document" background="img/background.jpg">
+    <!-- Fixed top navbar -->
+        <nav class="navbar navbar-inverse no-padding">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <img class="navbar-brand" src="img/logo.png" />
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active no-padding"><a href="#">Registraion</a></li>
+                <li><a href="#about">Add/Drop</a></li>
+                <li><a href="#contact">Calendar</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle glyphicon glyphicon-shopping-cart" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+            </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+    <!-- Main component -->
+    <div class="container-fluid" role="main">
+      <div class="row">
+        <!-- Tree -->
+        <div class="col-md-8 no-padding">
+            <img class="no-padding" src="img/tree-preview.jpg" style="width:100%;"/>
+        </div>
+
+        <!-- Side Menu -->
+
+        <div class="col-md-4 no-padding side-menu height-fill-parent">
+            <div class="page-header side-menu-header">
+              <h3>CS Required</h3>
+            </div>
+            <div class="side-menu-body">
+              <div class="list-group">
+                <a href="#" class="list-group-item clearfix">
+                  <span class="pull-left">
+                    <button class="btn btn-default round-button">
+                      <span class="glyphicon glyphicon-plus grey"></span>
+                    </button>
+                  </span>
+                  <h4 class="list-group-item-heading">CS 125 <em>(4)</em></h4>
+                  <em class="list-group-item-text grey">Intro to Computer Science</em>
+                </a>
+                <a href="#" class="list-group-item clearfix">
+                  <span class="pull-left">
+                    <button class="btn btn-default round-button">
+                      <span class="glyphicon glyphicon-plus grey"></span>
+                    </button>
+                  </span>
+                  <h4 class="list-group-item-heading">CS 173 <em>(4)</em></h4>
+                  <em class="list-group-item-text grey">Discrete Structures</em>
+                </a>
+                <a href="#" class="list-group-item clearfix">
+                  <span class="pull-left">
+                    <button class="btn btn-default round-button">
+                      <span class="glyphicon glyphicon-plus grey"></span>
+                    </button>
+                  </span>
+                  <h4 class="list-group-item-heading">CS 225 <em>(4)</em></h4>
+                  <em class="list-group-item-text grey">Data Structures</em>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
